@@ -16,7 +16,10 @@ TELEGRAM_BOT_TOKEN = os.getenv("8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s")
 
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
 # 2. Telegram Bot Token read karein
-TELEGRAM_BOT_TOKEN = os.getenv("8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s")
+# Direct token paste karein (Double quotes " " ke andar)
+TELEGRAM_BOT_TOKEN = "8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s"  # <-- Yahan apna BotFather wala asli token daalein
+
+app = ApplicationBuilder().token(TELEGRAM_BOT_TOKEN).build()
 
 # 3. OpenAI Client initialize karein
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
