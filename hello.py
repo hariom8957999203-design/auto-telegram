@@ -9,6 +9,23 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 import os
 import os
+import os
+from flask import Flask
+from threading import Thread
+
+# Dummy Web Server Render Port ke liye
+app = Flask('')
+
+@app.route('/')
+def home():
+    return "Bot is alive!"
+
+def run():
+    port = int(os.environ.get("PORT", 8080))
+    app.run(host='0.0.0.0', port=port)
+
+# Background thread mein server run karein
+Thread(target=run).start()
 # Square brackets [...] ki jagah Curly brackets {...} lagayein:
 WATCHLIST = {}
 # Render ke environment variables se keys uthana
