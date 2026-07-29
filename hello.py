@@ -30,8 +30,8 @@ Thread(target=run).start()
 WATCHLIST = {
     "RELIANCE.NS": [],
     "TATAMOTORS.NS": [],
-    "SBIN.NS": []
-    "NBCC.NS": []
+    "SBIN.NS": [],
+    "NBCC.NS": [],
     "NBCC.NS",         # 1. NBCC (NBSS)
     "UCOBANK.NS",      # 2. UCO Bank
     "IDEA.NS",         # 3. Vodafone Idea
@@ -51,37 +51,37 @@ WATCHLIST = {
     "NHPC.NS",         # 19. NHPC
     "SUZLON.NS",       # 20. Suzlon Energy
     "TRIDENT.NS",      # 21. Trident
-    "IRB.NS"           # 23. IRB Infrastructure Developers
-    "PNB.NS"
-    "IDFCFIRSTB.NS"
-    "FEDERALBNK.NS"
-    "UNIONBANK.NS"
-    "BANKBARODA.NS"
-    "CANBK.NS"
-    "IOB.NS"
-    "UCOBANK.NS"
-    "CENTRALBK.NS"
-    "MAHABANK.NS"
-    "SUZLON.NS"
-    "IRFC.NS"
-    "PNB.NS"
-    "NHPC.NS"
-    "IOC.NS"
-    "GAIL.NS"
-    "TATAPOWER.NS"
-    "IDFCFIRSTB.NS"
-    "YESBANK.NS"
-    "ZOMATO.NS"
-    "FEDERALBNK.NS"
-    "SAIL.NS"
-    "SJVN.NS"
-    "UNIONBANK.NS"
-    "BHEL.NS"
-    "NMDC.NS"
-    "MOTHERSON.NS"
-    "ASHOKLEY.NS"
-    "BANKBARODA.NS"
-    "CANBK.NS"
+    "IRB.NS",           # 23. IRB Infrastructure Developers
+    "PNB.NS",
+    "IDFCFIRSTB.NS",
+    "FEDERALBNK.NS",
+    "UNIONBANK.NS",
+    "BANKBARODA.NS",
+    "CANBK.NS",
+    "IOB.NS",
+    "UCOBANK.NS",
+    "CENTRALBK.NS",
+    "MAHABANK.NS",
+    "SUZLON.NS",
+    "IRFC.NS",
+    "PNB.NS",
+    "NHPC.NS",
+    "IOC.NS",
+    "GAIL.NS",
+    "TATAPOWER.NS",
+    "IDFCFIRSTB.NS",
+    "YESBANK.NS",
+    "ZOMATO.NS",
+    "FEDERALBNK.NS",
+    "SAIL.NS",
+    "SJVN.NS",
+    "UNIONBANK.NS",
+    "BHEL.NS",
+    "NMDC.NS",
+    "MOTHERSON.NS",
+    "ASHOKLEY.NS",
+    "BANKBARODA.NS",
+    "CANBK.NS",
 }
 
 # Job Queue jo har 5 minute mein automatically run hota hai:
