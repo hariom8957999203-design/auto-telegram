@@ -9,7 +9,8 @@ from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
 import os
 import os
-
+# Watchlist define karein (Jinki stocks/crypto ki monitoring auto_scan_job karega)
+WATCHLIST = ["RELIANCE.NS", "TATAMOTORS.NS", "NIFTY50", "BTC-USD"]
 # Render ke environment variables se keys uthana
 OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 TELEGRAM_BOT_TOKEN = os.getenv("8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s")
