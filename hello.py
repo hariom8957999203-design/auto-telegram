@@ -7,17 +7,18 @@ from openai import OpenAI
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 
-# ==================== CONFIGURATION ====================
-TELEGRAM_BOT_TOKEN = "8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s"
+import os
 import os
 
-# OpenAI API Key ko Environment variable se uthana
-openai_api_key = os.getenv("OPENAI_API_KEY")
-# Tracked Tickers Dictionary {ticker: [chat_ids]}
-WATCHLIST = {}
+# Render ke environment variables se keys uthana
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+TELEGRAM_BOT_TOKEN = os.getenv("8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s")
 
-# Setup Logging
-logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+openai_client = OpenAI(api_key=OPENAI_API_KEY)
+# 2. Telegram Bot Token read karein
+TELEGRAM_BOT_TOKEN = os.getenv("8639171627:AAGQaG27vA5tw12iEtLfs0Nz-hvyFYrBt4s")
+
+# 3. OpenAI Client initialize karein
 openai_client = OpenAI(api_key=OPENAI_API_KEY)
 
 # ==================== 4-LENS ANALYSIS ENGINE ====================
